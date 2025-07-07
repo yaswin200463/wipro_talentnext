@@ -1,20 +1,17 @@
-package Arrays; // Keep this if you are indeed using a package structure
-
+package Arrays; 
+import java.util.*;
 public class Question14 {
 
     public static void main(String[] args) {
-
-        if (args.length != 9) {
-            System.out.println("Please enter 9 integer numbers");
-            return;
-        }
+    	Scanner s = new Scanner(System.in);
+       
 
         int[][] arr = new int[3][3];
         int k = 0;
         try {
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
-                    arr[i][j] = Integer.parseInt(args[k++]);
+                    arr[i][j] = s.nextInt();
                 }
             }
         } catch (NumberFormatException e) {
