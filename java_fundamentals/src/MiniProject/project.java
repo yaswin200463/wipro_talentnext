@@ -47,9 +47,9 @@ public class project {
                         break;
                 }
 
-                int salary = basic[i] + hra[i] + daAmount - it[i];
+                int salar = basic[i] + hra[i] + daAmount - it[i];
                 System.out.println("Emp No.\tEmp Name\tDepartment\tDesignation\tSalary");
-                System.out.println(empId[i] + "\t" + empName[i] + "\t\t" + department[i] + "\t\t" + desig + "\t" + salary);
+                System.out.println(empId[i] + "\t" + empName[i] + "\t\t" + department[i] + "\t\t" + desig + "\t" + salar);
                 break;
             }
         }
