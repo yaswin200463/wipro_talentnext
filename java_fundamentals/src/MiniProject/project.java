@@ -2,7 +2,6 @@ package MiniProject;
 import java.util.*;
 public class project {
     public static void main(String[] args) {
-        // Employee details arrays
         int[] empId = {1001, 1002, 1003, 1004, 1005, 1006, 1007};
         String[] empName = {"Ashish", "Sushma", "Rahul", "Chahat", "Ranjan", "Suman", "Tanmay"};
         String[] joinDate = {"01/04/2009", "23/08/2012", "12/11/2008", "29/01/2013", "16/07/2005", "1/1/2000", "12/06/2006"};
@@ -11,8 +10,6 @@ public class project {
         int[] basic = {20000, 30000, 10000, 12000, 50000, 23000, 29000};
         int[] hra = {8000, 12000, 8000, 6000, 20000, 9000, 12000};
         int[] it = {3000, 9000, 1000, 2000, 20000, 4400, 10000};
-
-        // Designation codes and corresponding DA values
         char[] code = {'e', 'c', 'k', 'r', 'm'};
         String[] designation = {"Engineer", "Consultant", "Clerk", "Receptionist", "Manager"};
         int[] da = {20000, 32000, 12000, 15000, 40000};
@@ -27,8 +24,6 @@ public class project {
                 found = true;
                 int daAmount = 0;
                 String desig = "";
-
-                // Find DA and Designation using switch-case
                 switch (desigCode[i]) {
                     case 'e':
                         daAmount = 20000;
@@ -53,8 +48,6 @@ public class project {
                 }
 
                 int salary = basic[i] + hra[i] + daAmount - it[i];
-
-                // Output
                 System.out.println("Emp No.\tEmp Name\tDepartment\tDesignation\tSalary");
                 System.out.println(empId[i] + "\t" + empName[i] + "\t\t" + department[i] + "\t\t" + desig + "\t" + salary);
                 break;
